@@ -1,0 +1,10 @@
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\ObjectCollab.Domain.dll.config
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\ObjectCollab.Domain.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\ObjectCollab.Domain.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\EntityFramework.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\EntityFramework.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\obj\Debug\ObjectCollab.Domain.csprojResolveAssemblyReference.cache
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\obj\Debug\ObjectCollab.Domain.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\obj\Debug\ObjectCollab.Domain.pdb
