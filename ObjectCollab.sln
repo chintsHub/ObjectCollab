@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectCollab.Migration", "O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectCollab.DAL", "ObjectCollab.DAL\ObjectCollab.DAL.csproj", "{228A78DD-C383-4698-ADEB-F0AA6C741374}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectCollab.Specs.Unit", "ObjectCollab.Specs.Unit\ObjectCollab.Specs.Unit.csproj", "{5AF4BA36-2E12-49E4-BCF8-96A1E2B73B18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectCollab.BusinessLayer", "ObjectCollab.BusinessLayer\ObjectCollab.BusinessLayer.csproj", "{48BD04EC-9939-47FE-AFAB-B9A12014B540}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{228A78DD-C383-4698-ADEB-F0AA6C741374}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{228A78DD-C383-4698-ADEB-F0AA6C741374}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{228A78DD-C383-4698-ADEB-F0AA6C741374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF4BA36-2E12-49E4-BCF8-96A1E2B73B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF4BA36-2E12-49E4-BCF8-96A1E2B73B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF4BA36-2E12-49E4-BCF8-96A1E2B73B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF4BA36-2E12-49E4-BCF8-96A1E2B73B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48BD04EC-9939-47FE-AFAB-B9A12014B540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48BD04EC-9939-47FE-AFAB-B9A12014B540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48BD04EC-9939-47FE-AFAB-B9A12014B540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48BD04EC-9939-47FE-AFAB-B9A12014B540}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

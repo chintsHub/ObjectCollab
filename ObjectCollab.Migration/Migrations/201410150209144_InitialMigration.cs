@@ -28,13 +28,10 @@ namespace ObjectCollab.Migration
                         DataObjectLabel = c.String(nullable: false),
                         GroupId = c.Int(nullable: false),
                         RowVersion = c.Binary(nullable: false, fixedLength: true, timestamp: true, storeType: "rowversion"),
-                        DataObjectGroup_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.DataObjectId)
-                .ForeignKey("dbo.DataObjectHierarchy", t => t.DataObjectGroup_Id)
                 .ForeignKey("dbo.DataObjectHierarchy", t => t.GroupId, cascadeDelete: true)
-                .Index(t => t.GroupId)
-                .Index(t => t.DataObjectGroup_Id);
+                .Index(t => t.GroupId);
             
             CreateTable(
                 "dbo.ColumnDefinition",
@@ -98,12 +95,10 @@ namespace ObjectCollab.Migration
             DropForeignKey("dbo.OleDbObject", "DataObjectId", "dbo.DataObject");
             DropForeignKey("dbo.DataObjectHierarchy", "ParentId", "dbo.DataObjectHierarchy");
             DropForeignKey("dbo.DataObject", "GroupId", "dbo.DataObjectHierarchy");
-            DropForeignKey("dbo.DataObject", "DataObjectGroup_Id", "dbo.DataObjectHierarchy");
             DropForeignKey("dbo.ColumnDefinition", "OleDbDataObjectId", "dbo.OleDbObject");
             DropIndex("dbo.OleDbObject", new[] { "ConnectionId" });
             DropIndex("dbo.OleDbObject", new[] { "DataObjectId" });
             DropIndex("dbo.ColumnDefinition", new[] { "OleDbDataObjectId" });
-            DropIndex("dbo.DataObject", new[] { "DataObjectGroup_Id" });
             DropIndex("dbo.DataObject", new[] { "GroupId" });
             DropIndex("dbo.DataObjectHierarchy", new[] { "ParentId" });
             DropTable("dbo.OleDbObject");

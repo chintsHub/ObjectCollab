@@ -1,0 +1,5 @@
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.BusinessLayer.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.BusinessLayer.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.pdb

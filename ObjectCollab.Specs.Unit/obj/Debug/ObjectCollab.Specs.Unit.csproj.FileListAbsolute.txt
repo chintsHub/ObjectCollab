@@ -1,0 +1,7 @@
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Specs.Unit\bin\Debug\ObjectCollab.Specs.Unit.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Specs.Unit\bin\Debug\ObjectCollab.Specs.Unit.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Specs.Unit\bin\Debug\Moq.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Specs.Unit\bin\Debug\Moq.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Specs.Unit\obj\Debug\ObjectCollab.Specs.Unit.csprojResolveAssemblyReference.cache
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Specs.Unit\obj\Debug\ObjectCollab.Specs.Unit.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Specs.Unit\obj\Debug\ObjectCollab.Specs.Unit.pdb

@@ -14,7 +14,7 @@ namespace ObjectCollab.Domain
         string Name { get; set; }
 
 
-        ICollection<DataObject> DataObjects { get; set; }
+        
 
         int? ParentId { get; set; }
         DataObjectGroup ParentGroup { get; set; }
@@ -29,7 +29,7 @@ namespace ObjectCollab.Domain
         public string Name { get; set; }
 
 
-        public ICollection<DataObject> DataObjects { get; set; }
+        
 
         public int? ParentId { get; set; }
         public virtual DataObjectGroup ParentGroup { get; set; }

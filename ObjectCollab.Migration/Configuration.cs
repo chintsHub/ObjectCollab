@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Migrations;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using ObjectCollab.DAL;
@@ -77,9 +79,28 @@ namespace ObjectCollab.Migration
         protected override void Seed(ObjectCollabContext context)
         {
 
-           
+            //Assumption for Seeding data : Seeding data will only be inserted for empty database. The assumption here
+            //is - if there is record in AssetCategoryGroup, the seeding data will not be inserted.
 
+            string fileName = "";
+#if DEBUG
+            fileName = "ObjectCollab.Migration.SeedingSQL.SeedData.sql";
+#else
+                    fileName = "ObjectCollab.Migration.SeedingSQL.SeedData.sql";
+#endif
 
+            string commandText;
+            Assembly thisAssembly = Assembly.GetExecutingAssembly();
+            using (Stream s = thisAssembly.GetManifestResourceStream(
+                fileName))
+            {
+                using (StreamReader sr = new StreamReader(s))
+                {
+                    commandText = sr.ReadToEnd();
+                }
+            }
+            context.Database.CommandTimeout = 300;
+            context.Database.ExecuteSqlCommand(commandText);
         }
     }
 }

@@ -21,7 +21,8 @@ namespace ObjectCollab.Domain.Mapper
             configuration.Property(c => c.DataObjectLabel).IsRequired();
             configuration.Property(c => c.RowVersion).IsRowVersion();
 
-            // configuration.HasRequired(c => c.Config).WithRequiredPrincipal(c => c.DataObject);
+            //configuration.HasRequired(c => c.Group)
+            //    .WithMany(g => g.ChildrenDataObjects).HasForeignKey(c => c.GroupId).WillCascadeOnDelete(false);
         }
     }
 }

@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Migrations\201409100842489_InitialMigration.cs" />
-    <Compile Include="Migrations\201409100842489_InitialMigration.Designer.cs">
-      <DependentUpon>201409100842489_InitialMigration.cs</DependentUpon>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Migrations\201410150209144_InitialMigration.cs" />
+    <Compile Include="Migrations\201410150209144_InitialMigration.Designer.cs">
+      <DependentUpon>201410150209144_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,8 +64,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201409100842489_InitialMigration.resx">
-      <DependentUpon>201409100842489_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="SeedingSQL\SeedData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201410150209144_InitialMigration.resx">
+      <DependentUpon>201410150209144_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

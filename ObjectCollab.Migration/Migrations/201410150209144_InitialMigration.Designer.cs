@@ -13,7 +13,7 @@ namespace ObjectCollab.Migration
         
         string IMigrationMetadata.Id
         {
-            get { return "201409100842489_InitialMigration"; }
+            get { return "201410150209144_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source

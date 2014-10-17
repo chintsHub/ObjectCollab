@@ -26,7 +26,7 @@ namespace ObjectCollab.Domain.Mapper
             configuration.Property(c => c.RowVersion).IsRowVersion();
             configuration.Property(c => c.Name).IsRequired();
 
-            configuration.HasMany(c => c.DataObjects)
+            configuration.HasMany(c => c.ChildrenDataObjects)
                 .WithRequired(c => c.Group)
                 .HasForeignKey(c => c.GroupId);
 
