@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectCollab.Domain", "ObjectCollab.Domain\ObjectCollab.Domain.csproj", "{F55314C3-416D-4B1E-AC4E-444617CCF050}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectCollab.Specs.Unit", "ObjectCollab.Specs.Unit\ObjectCollab.Specs.Unit.csproj", "{5AF4BA36-2E12-49E4-BCF8-96A1E2B73B18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectCollab.BusinessLayer", "ObjectCollab.BusinessLayer\ObjectCollab.BusinessLayer.csproj", "{48BD04EC-9939-47FE-AFAB-B9A12014B540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectCollab.Enums", "ObjectCollab.Enums\ObjectCollab.Enums.csproj", "{7E60F416-F0EC-4DF3-ACF2-3CA17696C7F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{48BD04EC-9939-47FE-AFAB-B9A12014B540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48BD04EC-9939-47FE-AFAB-B9A12014B540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48BD04EC-9939-47FE-AFAB-B9A12014B540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E60F416-F0EC-4DF3-ACF2-3CA17696C7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E60F416-F0EC-4DF3-ACF2-3CA17696C7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E60F416-F0EC-4DF3-ACF2-3CA17696C7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E60F416-F0EC-4DF3-ACF2-3CA17696C7F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

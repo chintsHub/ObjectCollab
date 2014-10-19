@@ -1,0 +1,4 @@
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Enums\bin\Debug\ObjectCollab.Enums.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Enums\bin\Debug\ObjectCollab.Enums.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Enums\obj\Debug\ObjectCollab.Enums.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Enums\obj\Debug\ObjectCollab.Enums.pdb

@@ -3,3 +3,10 @@ C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCo
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.dll
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.BusinessLayer.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.BusinessLayer.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Enums.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Enums.pdb

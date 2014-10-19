@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Domain\DataObject.cs" />
     <Compile Include="Domain\DataObjectGroup.cs" />
-    <Compile Include="Domain\Enum.cs" />
     <Compile Include="Domain\OleDbDataObject.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="Mapper\BaseMapper.cs" />
@@ -63,6 +62,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ObjectCollab.Enums\ObjectCollab.Enums.csproj">
+      <Project>{7e60f416-f0ec-4df3-acf2-3ca17696c7f7}</Project>
+      <Name>ObjectCollab.Enums</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

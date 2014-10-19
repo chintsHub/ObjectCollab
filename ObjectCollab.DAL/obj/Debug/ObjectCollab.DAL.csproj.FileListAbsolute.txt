@@ -10,3 +10,17 @@ C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\bin\Debug\EntityFramework.Sq
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\obj\Debug\ObjectCollab.DAL.csprojResolveAssemblyReference.cache
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\obj\Debug\ObjectCollab.DAL.dll
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\obj\Debug\ObjectCollab.DAL.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.DAL.dll.config
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.DAL.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.DAL.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\EntityFramework.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.Domain.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.Domain.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\EntityFramework.xml
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\obj\Debug\ObjectCollab.DAL.csprojResolveAssemblyReference.cache
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\obj\Debug\ObjectCollab.DAL.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\obj\Debug\ObjectCollab.DAL.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.Enums.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.Enums.pdb

@@ -39,8 +39,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExternalDAL\DataExtractor.cs" />
+    <Compile Include="BusinessObjects\DataObjectBO.cs" />
+    <Compile Include="BusinessObjects\DataObjectGroup.cs" />
+    <Compile Include="BusinessObjects\IDataRow.cs" />
+    <Compile Include="BusinessObjects\OleDbDataObject.cs" />
+    <Compile Include="BusinessObjects\User.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="ExternalDAL\ExternalDataAccessManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Engines\" />
+    <Folder Include="Managers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ObjectCollab.Enums\ObjectCollab.Enums.csproj">
+      <Project>{7e60f416-f0ec-4df3-acf2-3ca17696c7f7}</Project>
+      <Name>ObjectCollab.Enums</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
