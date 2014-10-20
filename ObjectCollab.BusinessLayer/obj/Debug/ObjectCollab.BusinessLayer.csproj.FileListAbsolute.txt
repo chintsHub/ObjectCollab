@@ -10,3 +10,14 @@ C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\obj\Deb
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\obj\Debug\ObjectCollab.BusinessLayer.pdb
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Enums.dll
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Enums.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Enums.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Enums.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.BusinessLayer.dll.config
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.DAL.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Domain.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.DAL.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Domain.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml

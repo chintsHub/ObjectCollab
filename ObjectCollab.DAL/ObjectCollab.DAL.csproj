@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="IDataProvider.cs" />
     <Compile Include="ObjectCollabContext.cs" />
+    <Compile Include="ObjectCollabDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

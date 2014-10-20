@@ -1,0 +1,16 @@
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.ConsoleApp.exe.config
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\obj\Debug\ObjectCollab.ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.ConsoleApp.exe
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.ConsoleApp.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.BusinessLayer.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.Enums.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.BusinessLayer.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.Enums.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\obj\Debug\ObjectCollab.ConsoleApp.exe
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\obj\Debug\ObjectCollab.ConsoleApp.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.DAL.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\EntityFramework.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.Domain.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.DAL.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\EntityFramework.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.Domain.pdb

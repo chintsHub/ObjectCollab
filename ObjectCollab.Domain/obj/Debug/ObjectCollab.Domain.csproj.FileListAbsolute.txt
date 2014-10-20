@@ -20,3 +20,5 @@ C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Domain\obj\Debug\Obje
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Domain\obj\Debug\ObjectCollab.Domain.pdb
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Domain\bin\Debug\ObjectCollab.Enums.dll
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Domain\bin\Debug\ObjectCollab.Enums.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\ObjectCollab.Enums.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Domain\bin\Debug\ObjectCollab.Enums.pdb

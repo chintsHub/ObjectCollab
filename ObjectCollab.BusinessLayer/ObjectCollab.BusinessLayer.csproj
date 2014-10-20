@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,21 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExternalDAL\DataExtractor.cs" />
+    <Compile Include="Engines\DataExtractor.cs" />
     <Compile Include="BusinessObjects\DataObjectBO.cs" />
     <Compile Include="BusinessObjects\DataObjectGroup.cs" />
     <Compile Include="BusinessObjects\IDataRow.cs" />
     <Compile Include="BusinessObjects\OleDbDataObject.cs" />
     <Compile Include="BusinessObjects\User.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="ExternalDAL\ExternalDataAccessManager.cs" />
+    <Compile Include="Engines\DataObjectEngine.cs" />
+    <Compile Include="Engines\IOleDbDataAccessEngine.cs" />
+    <Compile Include="Engines\OleDbDataAccessEngine.cs" />
+    <Compile Include="Factory\IDataProvider.cs" />
+    <Compile Include="Engines\OledbDataExtractor.cs" />
+    <Compile Include="Factory\DataProvider.cs" />
+    <Compile Include="Engines\ConnectionType.cs" />
+    <Compile Include="Managers\DataObjectManager.cs" />
+    <Compile Include="Managers\ExternalDataManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Engines\" />
-    <Folder Include="Managers\" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ObjectCollab.DAL\ObjectCollab.DAL.csproj">
+      <Project>{228a78dd-c383-4698-adeb-f0aa6c741374}</Project>
+      <Name>ObjectCollab.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjectCollab.Domain\ObjectCollab.Domain.csproj">
+      <Project>{f55314c3-416d-4b1e-ac4e-444617ccf050}</Project>
+      <Name>ObjectCollab.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ObjectCollab.Enums\ObjectCollab.Enums.csproj">
       <Project>{7e60f416-f0ec-4df3-acf2-3ca17696c7f7}</Project>
       <Name>ObjectCollab.Enums</Name>
