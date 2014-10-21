@@ -27,6 +27,7 @@ namespace ObjectCollab.Migration
                         DataObjectId = c.Int(nullable: false, identity: true),
                         DataObjectLabel = c.String(nullable: false),
                         GroupId = c.Int(nullable: false),
+                        DataObjectType = c.Int(nullable: false),
                         RowVersion = c.Binary(nullable: false, fixedLength: true, timestamp: true, storeType: "rowversion"),
                     })
                 .PrimaryKey(t => t.DataObjectId)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ObjectCollab.Enums;
 
 namespace ObjectCollab.Domain
 {
@@ -12,6 +13,7 @@ namespace ObjectCollab.Domain
         string DataObjectLabel { get; set; }
         int GroupId { get; set; }
         DataObjectGroup Group { get; set; }
+        DataObjectType DataObjectType { get; set; }
         byte[] RowVersion { get; set; }
     }
 
@@ -26,6 +28,8 @@ namespace ObjectCollab.Domain
 
         public int GroupId { get; set; }
         public DataObjectGroup Group { get; set; }
+
+        public DataObjectType DataObjectType { get; set; }
 
         public byte[] RowVersion { get; set; }
     }

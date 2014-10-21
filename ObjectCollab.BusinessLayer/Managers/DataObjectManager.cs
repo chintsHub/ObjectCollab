@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ObjectCollab.BusinessLayer.BusinessObjects;
 using ObjectCollab.BusinessLayer.Engines;
 using ObjectCollab.BusinessLayer.Manager;
 
@@ -26,9 +27,9 @@ namespace ObjectCollab.BusinessLayer.Managers
 
         public void GetDataForDataObject(int dataObjectId)
         {
-            engine.GetDataObjectById(dataObjectId);
+            var dataObject =  engine.GetDataObjectById(dataObjectId);
 
-            //externalDataManager.LoadData();
+            externalDataManager.LoadData(dataObject);
         }
     }
 }

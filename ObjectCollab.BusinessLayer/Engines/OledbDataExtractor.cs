@@ -1,19 +1,20 @@
 ﻿using System.Data;
 using ObjectCollab.BusinessLayer.BusinessObjects;
 using ObjectCollab.BusinessLayer.Manager;
+using ObjectCollab.Domain;
 
 namespace ObjectCollab.BusinessLayer.Engine
 {
     public class OledbDataExtractor : IDataExtractor
     {
-        private IOleDbDataObjectBO oleDbObj;
+        private IOleDbDataObject oleDbObj;
         private IOleDbDataAccessEngine exteranlDal;
 
         
 
-        public OledbDataExtractor(IOleDbDataObjectBO oleDbObject, IOleDbDataAccessEngine exteranlDal)
+        public OledbDataExtractor(IOleDbDataObject oleDbObject, IOleDbDataAccessEngine exteranlDal)
         {
-            oleDbObj = oleDbObject;
+            this.oleDbObj = oleDbObject;
             this.exteranlDal = exteranlDal;
         }
 
@@ -21,6 +22,7 @@ namespace ObjectCollab.BusinessLayer.Engine
         
         public IDataRowBO[] GetDataRows()
         {
+            
             IDbConnection connection = exteranlDal.GetConnection(oleDbObj.Connection.ConnectionString);
 
             return null;

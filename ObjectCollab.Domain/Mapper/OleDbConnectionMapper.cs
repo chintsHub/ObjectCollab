@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
-using ObjectCollab.Domain.Domain;
+
 
 namespace ObjectCollab.Domain.Mapper
 {

@@ -21,3 +21,6 @@ C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCo
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Domain.pdb
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.Net4.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.xml

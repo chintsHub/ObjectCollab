@@ -14,3 +14,8 @@ C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectColla
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.DAL.pdb
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\EntityFramework.xml
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.Domain.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\AutoMapper.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\AutoMapper.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\AutoMapper.Net4.dll

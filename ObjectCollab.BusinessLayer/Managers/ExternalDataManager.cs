@@ -1,12 +1,13 @@
 ﻿using ObjectCollab.BusinessLayer.BusinessObjects;
 using ObjectCollab.BusinessLayer.Engine;
 using ObjectCollab.BusinessLayer.Factory;
+using ObjectCollab.Domain;
 
 namespace ObjectCollab.BusinessLayer.Manager
 {
     public interface IExternalDataManager
     {
-        IDataRowBO[] LoadData(IDataObjectBO dataObj);
+        IDataRowBO[] LoadData(IDataObject dataObj);
 
     }
 
@@ -21,7 +22,7 @@ namespace ObjectCollab.BusinessLayer.Manager
             
         }
 
-        public IDataRowBO[] LoadData(IDataObjectBO dataObj)
+        public IDataRowBO[] LoadData(IDataObject dataObj)
         {
             IDataExtractor dataExtractor = dataProvider.GetDataExtractor(dataObj);
             return dataExtractor.GetDataRows();

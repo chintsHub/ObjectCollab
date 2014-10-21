@@ -15,7 +15,7 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
         OledbConnectionBO Connection { get; set; }
 
         string ObjectName { get; set; }
-        ICollection<ColumnDefinitionBO> ColumnDefinitions { get; set; }
+        //ICollection<ColumnDefinitionBO> ColumnDefinitions { get; set; }
         string WhereClause { get; set; }
 
         
@@ -28,7 +28,7 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
         public OledbConnectionBO Connection { get; set; }
 
         public string ObjectName { get; set; }
-        public ICollection<ColumnDefinitionBO> ColumnDefinitions { get; set; }
+       // public ICollection<ColumnDefinitionBO> ColumnDefinitions { get; set; }
 
         public string WhereClause { get; set; }
 

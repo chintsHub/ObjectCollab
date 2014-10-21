@@ -12,6 +12,11 @@ namespace ObjectCollab.Enums
         Oracle
     }
 
+    public enum DataObjectType
+    {
+        Oledb = 1
+    }
+
     public enum Role
     {
         SystemAdmin,

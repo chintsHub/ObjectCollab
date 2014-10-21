@@ -1,6 +1,7 @@
 ﻿IF((select count(*) from DataObjectHierarchy) = 0)
 Begin
  
+
 SET IDENTITY_INSERT [dbo].[DataObjectHierarchy] ON 
 
  
@@ -13,7 +14,7 @@ SET IDENTITY_INSERT [dbo].[DataObjectHierarchy] OFF
 SET IDENTITY_INSERT [dbo].[DataObject] ON 
 
  
-INSERT [dbo].[DataObject] ([DataObjectId], [DataObjectLabel], [GroupId]) VALUES (1, N'Building Assets', 2)
+INSERT [dbo].[DataObject] ([DataObjectId], [DataObjectLabel], [GroupId], [DataObjectType]) VALUES (1, N'Building Assets', 2, 1)
  
 SET IDENTITY_INSERT [dbo].[DataObject] OFF
  
@@ -23,6 +24,8 @@ SET IDENTITY_INSERT [dbo].[OleDbConnection] ON
 INSERT [dbo].[OleDbConnection] ([ConnectionId], [ConnectionName], [ConnectionString], [Provider]) VALUES (1, N'Assetic3', N'Password=assetic3password;Persist Security Info=True;User ID=assetic3user;Initial Catalog=OC4;Data Source=BEAK\CHINTSSQL2012', 1)
  
 SET IDENTITY_INSERT [dbo].[OleDbConnection] OFF
+ 
+INSERT [dbo].[OleDbObject] ([DataObjectId], [ConnectionId], [ObjectName], [WhereClause], [OledbProvider]) VALUES (1, 1, N'ComplexAssets', NULL, 1)
  
 SET IDENTITY_INSERT [dbo].[User] ON 
 
@@ -34,6 +37,8 @@ INSERT [dbo].[User] ([UserId], [UserName], [Password], [Role]) VALUES (2, N'admi
 INSERT [dbo].[User] ([UserId], [UserName], [Password], [Role]) VALUES (4, N'analyst', N'analyst', 3)
  
 SET IDENTITY_INSERT [dbo].[User] OFF
+ 
+
 
 END
  

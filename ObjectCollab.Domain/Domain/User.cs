@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ObjectCollab.Enums;
 
-namespace ObjectCollab.Domain.Domain
+namespace ObjectCollab.Domain
 {
     public interface IUser
     {

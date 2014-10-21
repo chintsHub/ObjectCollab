@@ -47,9 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration.cs" />
-    <Compile Include="Migrations\201410150209144_InitialMigration.cs" />
-    <Compile Include="Migrations\201410150209144_InitialMigration.Designer.cs">
-      <DependentUpon>201410150209144_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201410210331002_InitialMigration.cs" />
+    <Compile Include="Migrations\201410210331002_InitialMigration.Designer.cs">
+      <DependentUpon>201410210331002_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,13 +64,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201410210331002_InitialMigration.resx">
+      <DependentUpon>201410210331002_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SeedingSQL\SeedData.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201410150209144_InitialMigration.resx">
-      <DependentUpon>201410150209144_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

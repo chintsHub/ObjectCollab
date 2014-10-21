@@ -12,8 +12,6 @@ C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.Domain.dll
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.DAL.pdb
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.Domain.pdb
-C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\obj\Debug\ObjectCollab.Migration.InitialMigration.resources
-C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\obj\Debug\ObjectCollab.Migration.csproj.GenerateResource.Cache
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.Migration.dll.config
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.Migration.dll
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.Migration.pdb
@@ -34,3 +32,5 @@ C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Migration\bin\Debug\O
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.Enums.pdb
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.Enums.dll
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\bin\Debug\ObjectCollab.Enums.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\obj\Debug\ObjectCollab.Migration.InitialMigration.resources
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.Migration\obj\Debug\ObjectCollab.Migration.csproj.GenerateResource.Cache
