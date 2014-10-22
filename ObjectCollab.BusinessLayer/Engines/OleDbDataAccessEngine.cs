@@ -6,9 +6,7 @@ namespace ObjectCollab.BusinessLayer.Engine
 {
     public class OleDbDataAccessEngine : IOleDbDataAccessEngine
     {
-       
-
-
+        
         public  IDbConnection GetConnection(string connectionString)
         {
 
@@ -37,6 +35,35 @@ namespace ObjectCollab.BusinessLayer.Engine
             #endregion
 
             return connection;
+        }
+
+        public IDataAdapter GetDataAdapter(string selectStatement, IDbConnection connection)
+        {
+            ConnectionType thisConnectionType = CheckConnectionType(connection.ConnectionString);
+
+            #region Now generate the connection
+            IDbDataAdapter adapter = null;
+
+            switch (thisConnectionType)
+            {
+                case ConnectionType.SqlClient:
+                    adapter = new System.Data.SqlClient.SqlDataAdapter(selectStatement, (System.Data.SqlClient.SqlConnection)connection);
+                    break;
+
+                case ConnectionType.OleDb:
+                    adapter = new System.Data.OleDb.OleDbDataAdapter(selectStatement, (System.Data.OleDb.OleDbConnection)connection);
+                    break;
+                case ConnectionType.MicrosoftOracle:
+                    //adapter = new System.Data.OracleClient.OracleDataAdapter(selectStatement, (System.Data.OracleClient.OracleConnection)connection);
+                   // break;
+
+                default:
+                    //TODO : make error message part of configuration.
+                    throw new ApplicationException(string.Format("ConnectionType '{0}' requested from the Database Manager is not yet supported", thisConnectionType.ToString()));
+            }
+            #endregion
+
+            return adapter;
         }
 
         private ConnectionType CheckConnectionType(string connectionString)
