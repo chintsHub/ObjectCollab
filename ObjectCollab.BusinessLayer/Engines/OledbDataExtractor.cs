@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Collections.Generic;
 using ObjectCollab.BusinessLayer.BusinessObjects;
 using ObjectCollab.BusinessLayer.Manager;
 using ObjectCollab.Domain;
@@ -20,7 +21,7 @@ namespace ObjectCollab.BusinessLayer.Engine
 
 
         
-        public IDataRowBO[] GetDataRows()
+        public IList<IDataRowBO> GetDataRows()
         {
             DataTable externalData = null;
             using (IDbConnection connection = exteranlDal.GetConnection(oleDbObj.Connection.ConnectionString))
@@ -46,11 +47,14 @@ namespace ObjectCollab.BusinessLayer.Engine
                         connection.Close();
                 }
             }
-
+            var returnValue = new List<IDataRowBO>();
             //construct datarow
+            foreach(DataRow row in externalData.Rows)
+            {
+                var rowBo = new DataRowBO(row, oleDbObj);
+            }
 
-
-            return null;
+            return returnValue;
         }
     }
 }

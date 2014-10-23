@@ -24,3 +24,15 @@ C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFr
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.Net4.dll
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.dll
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.xml
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.Net4.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.BusinessLayer.dll.config
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.DAL.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Domain.dll
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.DAL.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\ObjectCollab.Domain.pdb
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.xml
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml

@@ -8,7 +8,7 @@ namespace ObjectCollab.BusinessLayer.Engine
 {
     public interface IDataExtractor
     {
-        IDataRowBO[] GetDataRows();
+        IList<IDataRowBO> GetDataRows();
     }
 }
 
