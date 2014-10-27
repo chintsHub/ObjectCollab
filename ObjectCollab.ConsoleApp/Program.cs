@@ -1,5 +1,8 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
+using System.Linq;
 using ObjectCollab.BusinessLayer.Automapper;
+using ObjectCollab.BusinessLayer.BusinessObjects;
 using ObjectCollab.BusinessLayer.Engines;
 using ObjectCollab.BusinessLayer.Factory;
 using ObjectCollab.BusinessLayer.Manager;
@@ -20,7 +23,19 @@ namespace ObjectCollab.ConsoleApp
 
 
             var extDataMang = new DataObjectManager(extMang, new DataObjectEngine(objectCollabDal));
-            extDataMang.GetDataForDataObject(1);
+            var assetData = extDataMang.GetDataForDataObject(1);
+
+            
+
+            foreach (var dataRowBo in assetData)
+            {
+                var oledbObj = dataRowBo.DataObject as IOleDbDataObjectBO;
+                var col = oledbObj.ColumnDefinitions.First(c => c.SourceColumn == "Name");
+                Console.WriteLine(dataRowBo[col].ToString());
+            }
+
+            Console.ReadLine();
+
         }
     }
 }

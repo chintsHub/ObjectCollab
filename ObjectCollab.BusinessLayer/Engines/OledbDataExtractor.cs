@@ -8,12 +8,12 @@ namespace ObjectCollab.BusinessLayer.Engine
 {
     public class OledbDataExtractor : IDataExtractor
     {
-        private IOleDbDataObject oleDbObj;
+        private IOleDbDataObjectBO oleDbObj;
         private IOleDbDataAccessEngine exteranlDal;
 
         
 
-        public OledbDataExtractor(IOleDbDataObject oleDbObject, IOleDbDataAccessEngine exteranlDal)
+        public OledbDataExtractor(IOleDbDataObjectBO oleDbObject, IOleDbDataAccessEngine exteranlDal)
         {
             this.oleDbObj = oleDbObject;
             this.exteranlDal = exteranlDal;
@@ -52,6 +52,7 @@ namespace ObjectCollab.BusinessLayer.Engine
             foreach(DataRow row in externalData.Rows)
             {
                 var rowBo = new DataRowBO(row, oleDbObj);
+                returnValue.Add(rowBo);
             }
 
             return returnValue;

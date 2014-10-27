@@ -12,10 +12,10 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
     {
         
         int ConnectionId { get; set; }
-        OledbConnectionBO Connection { get; set; }
+        IOledbConnectionBO Connection { get; set; }
 
         string ObjectName { get; set; }
-        //ICollection<ColumnDefinitionBO> ColumnDefinitions { get; set; }
+        ICollection<IColumnDefinitionBO> ColumnDefinitions { get; set; }
         string WhereClause { get; set; }
 
         
@@ -25,10 +25,10 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
     public class OleDbDataObjectBO : DataObjectBO, IOleDbDataObjectBO
     {
         public int ConnectionId { get; set; }
-        public OledbConnectionBO Connection { get; set; }
+        public IOledbConnectionBO Connection { get; set; }
 
         public string ObjectName { get; set; }
-       // public ICollection<ColumnDefinitionBO> ColumnDefinitions { get; set; }
+        public ICollection<IColumnDefinitionBO> ColumnDefinitions { get; set; }
 
         public string WhereClause { get; set; }
 

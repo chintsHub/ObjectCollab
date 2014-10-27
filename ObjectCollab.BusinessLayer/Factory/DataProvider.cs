@@ -10,12 +10,12 @@ namespace ObjectCollab.BusinessLayer.Factory
     public class DataProvider : IDataProvider
     {
 
-        public IDataExtractor GetDataExtractor(IDataObject dataObject)
+        public IDataExtractor GetDataExtractor(IDataObjectBO dataObject)
         {
             IDataExtractor retVal = null;
             if (dataObject.DataObjectType == DataObjectType.Oledb)
             {
-                retVal = new OledbDataExtractor(dataObject as OleDbDataObject, new OleDbDataAccessEngine());
+                retVal = new OledbDataExtractor(dataObject as IOleDbDataObjectBO, new OleDbDataAccessEngine());
             }
 
             return retVal;

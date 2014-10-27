@@ -18,7 +18,6 @@ C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\AutoMapper.
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\AutoMapper.xml
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
-C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\AutoMapper.Net4.dll
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.ConsoleApp.exe.config
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\obj\Debug\ObjectCollab.ConsoleApp.exe
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\obj\Debug\ObjectCollab.ConsoleApp.pdb
@@ -40,3 +39,4 @@ C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.Enums.pdb
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.Domain.pdb
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\obj\Debug\ObjectCollab.ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\AutoMapper.Net4.dll

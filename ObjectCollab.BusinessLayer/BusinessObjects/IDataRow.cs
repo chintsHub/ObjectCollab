@@ -10,8 +10,8 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
 {
     public interface IDataRowBO
     {
-        IDataObject DataObject {get; set;}
-        object this[ColumnDefinitionBO field] { get;}
+        IDataObjectBO DataObject {get; set;}
+        object this[IColumnDefinitionBO field] { get;}
         
 
     }
@@ -20,8 +20,8 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
     {
         private DataRow _row;
         
-        public IDataObject DataObject { get; set; }
-        public object this[ColumnDefinitionBO field] 
+        public IDataObjectBO DataObject { get; set; }
+        public object this[IColumnDefinitionBO field] 
         { 
             get
             {
@@ -30,7 +30,7 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
             
         }
 
-        public DataRowBO(DataRow row, IDataObject dataObject)
+        public DataRowBO(DataRow row, IDataObjectBO dataObject)
         {
             _row = row;
             DataObject = dataObject;

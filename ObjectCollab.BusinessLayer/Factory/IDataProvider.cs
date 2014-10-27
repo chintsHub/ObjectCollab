@@ -7,6 +7,6 @@ namespace ObjectCollab.BusinessLayer.Factory
 {
     public interface IDataProvider
     {
-        IDataExtractor GetDataExtractor(IDataObject dataObject);
+        IDataExtractor GetDataExtractor(IDataObjectBO dataObject);
     }
 }

@@ -11,7 +11,7 @@ namespace ObjectCollab.BusinessLayer.Managers
 {
     public interface IDataObjectManager
     {
-        void GetDataForDataObject(int dataObjectId);
+        IDataRowBO[] GetDataForDataObject(int dataObjectId);
     }
     
     public class DataObjectManager
@@ -25,11 +25,12 @@ namespace ObjectCollab.BusinessLayer.Managers
             this.engine = engine;
         }
 
-        public void GetDataForDataObject(int dataObjectId)
+        public IDataRowBO[] GetDataForDataObject(int dataObjectId)
         {
             var dataObject =  engine.GetDataObjectById(dataObjectId);
 
-            externalDataManager.LoadData(dataObject);
+            var retVal = externalDataManager.LoadData(dataObject);
+            return retVal.ToArray();
         }
     }
 }

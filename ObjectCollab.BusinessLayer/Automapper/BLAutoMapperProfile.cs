@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,11 +15,23 @@ namespace ObjectCollab.BusinessLayer.Automapper
     {
         protected override void Configure()
         {
+            Mapper.CreateMap<OledbConnection, IOledbConnectionBO>()
+               .IgnoreAllNonExisting();
+
             Mapper.CreateMap<DataObject, IDataObjectBO>()
                    .IgnoreAllNonExisting();
 
+            Mapper.CreateMap<ColumnDefinition, IColumnDefinitionBO>()
+              .IgnoreAllNonExisting();
+
             Mapper.CreateMap<OleDbDataObject, IOleDbDataObjectBO>()
                   .IgnoreAllNonExisting();
+
+
+            //Mapper.CreateMap<OleDbDataObject, OleDbDataObjectBO>()
+            //     .IgnoreAllNonExisting();
+           
+
         }
     }
 }

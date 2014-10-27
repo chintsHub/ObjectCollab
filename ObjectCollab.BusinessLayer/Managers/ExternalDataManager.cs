@@ -8,7 +8,7 @@ namespace ObjectCollab.BusinessLayer.Manager
 {
     public interface IExternalDataManager
     {
-        IList<IDataRowBO> LoadData(IDataObject dataObj);
+        IList<IDataRowBO> LoadData(IDataObjectBO dataObj);
 
     }
 
@@ -23,7 +23,7 @@ namespace ObjectCollab.BusinessLayer.Manager
             
         }
 
-        public IList<IDataRowBO> LoadData(IDataObject dataObj)
+        public IList<IDataRowBO> LoadData(IDataObjectBO dataObj)
         {
             IDataExtractor dataExtractor = dataProvider.GetDataExtractor(dataObj);
             return dataExtractor.GetDataRows();
