@@ -5,8 +5,8 @@ using ObjectCollab.Domain;
 
 namespace ObjectCollab.BusinessLayer.Factory
 {
-    public interface IDataProvider
+    public interface IDataProviderFactory
     {
-        IDataExtractor GetDataExtractor(IDataObjectBO dataObject);
+        Engine.IDataProvider GetDataProvider(IDataObjectBO dataObject);
     }
 }

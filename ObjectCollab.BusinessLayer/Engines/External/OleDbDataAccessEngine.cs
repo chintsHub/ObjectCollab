@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Data;
-using ObjectCollab.BusinessLayer.Engine;
+
+using ObjectCollab.Enums;
 
 namespace ObjectCollab.BusinessLayer.Engine
 {
-    public class OleDbDataAccessEngine : IOleDbDataAccessEngine
+    internal class OleDbDataAccessEngine : IOleDbDataAccessEngine
     {
         
         public  IDbConnection GetConnection(string connectionString)

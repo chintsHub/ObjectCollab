@@ -7,15 +7,15 @@ using ObjectCollab.Enums;
 
 namespace ObjectCollab.BusinessLayer.Factory
 {
-    public class DataProvider : IDataProvider
+    public class DataProviderFactory : IDataProviderFactory
     {
 
-        public IDataExtractor GetDataExtractor(IDataObjectBO dataObject)
+        public Engine.IDataProvider GetDataProvider(IDataObjectBO dataObject)
         {
-            IDataExtractor retVal = null;
+            Engine.IDataProvider retVal = null;
             if (dataObject.DataObjectType == DataObjectType.Oledb)
             {
-                retVal = new OledbDataExtractor(dataObject as IOleDbDataObjectBO, new OleDbDataAccessEngine());
+                retVal = new OledbDataProvider(dataObject as IOleDbDataObjectBO, new OleDbDataAccessEngine());
             }
 
             return retVal;

@@ -19,7 +19,7 @@ namespace ObjectCollab.ConsoleApp
             AutoMapperConfiguration.Configure();
             var objectCollabDal = new ObjectCollabDAL(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
-            var extMang = new ExternalDataManager(new DataProvider());
+            var extMang = new ExternalDataManager(new DataProviderFactory());
 
 
             var extDataMang = new DataObjectManager(extMang, new DataObjectEngine(objectCollabDal));

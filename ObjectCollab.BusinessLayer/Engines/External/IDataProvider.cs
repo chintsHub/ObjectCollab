@@ -6,7 +6,7 @@ using ObjectCollab.BusinessLayer.BusinessObjects;
 
 namespace ObjectCollab.BusinessLayer.Engine
 {
-    public interface IDataExtractor
+    public interface IDataProvider
     {
         IList<IDataRowBO> GetDataRows();
     }

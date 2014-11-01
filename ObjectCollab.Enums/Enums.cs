@@ -6,11 +6,22 @@ using System.Threading.Tasks;
 
 namespace ObjectCollab.Enums
 {
+    public enum ConnectionType
+    {
+        SqlClient,
+        MicrosoftOracle,
+        OracleODP,
+        ODBC,
+        OleDb
+    }
+
     public enum OledbProvider
     {
-        SQL,
-        Oracle
+        SQL = 1,
+        Oracle = 2
     }
+
+  
 
     public enum DataObjectType
     {

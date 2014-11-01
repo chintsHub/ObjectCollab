@@ -6,14 +6,14 @@ using ObjectCollab.Domain;
 
 namespace ObjectCollab.BusinessLayer.Engine
 {
-    public class OledbDataExtractor : IDataExtractor
+    public class OledbDataProvider : IDataProvider
     {
         private IOleDbDataObjectBO oleDbObj;
         private IOleDbDataAccessEngine exteranlDal;
 
         
 
-        public OledbDataExtractor(IOleDbDataObjectBO oleDbObject, IOleDbDataAccessEngine exteranlDal)
+        public OledbDataProvider(IOleDbDataObjectBO oleDbObject, IOleDbDataAccessEngine exteranlDal)
         {
             this.oleDbObj = oleDbObject;
             this.exteranlDal = exteranlDal;

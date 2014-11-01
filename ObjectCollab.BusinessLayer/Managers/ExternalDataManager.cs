@@ -3,20 +3,15 @@ using ObjectCollab.BusinessLayer.Engine;
 using ObjectCollab.BusinessLayer.Factory;
 using ObjectCollab.Domain;
 using System.Collections.Generic;
+using IDataProvider = ObjectCollab.BusinessLayer.Engine.IDataProvider;
 
 namespace ObjectCollab.BusinessLayer.Manager
 {
-    public interface IExternalDataManager
-    {
-        IList<IDataRowBO> LoadData(IDataObjectBO dataObj);
-
-    }
-
     public class ExternalDataManager : IExternalDataManager
     {
-        private IDataProvider dataProvider;
+        private IDataProviderFactory dataProvider;
 
-        public ExternalDataManager(IDataProvider dataProvider)
+        public ExternalDataManager(IDataProviderFactory dataProvider)
         {
             this.dataProvider = dataProvider;
 
@@ -25,8 +20,8 @@ namespace ObjectCollab.BusinessLayer.Manager
 
         public IList<IDataRowBO> LoadData(IDataObjectBO dataObj)
         {
-            IDataExtractor dataExtractor = dataProvider.GetDataExtractor(dataObj);
-            return dataExtractor.GetDataRows();
+            IDataProvider dataProvider = this.dataProvider.GetDataProvider(dataObj);
+            return dataProvider.GetDataRows();
         }
     }
 }
