@@ -36,3 +36,7 @@ C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Deb
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\AutoMapper.xml
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.BusinessLayer\bin\Debug\Microsoft.AspNet.Identity.Core.xml

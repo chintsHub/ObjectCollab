@@ -9,19 +9,19 @@ namespace ObjectCollab.BusinessLayer.Manager
 {
     public class ExternalDataManager : IExternalDataManager
     {
-        private IDataProviderFactory dataProvider;
+        private IDataProvider oledbDataProvider;
 
-        public ExternalDataManager(IDataProviderFactory dataProvider)
+        public ExternalDataManager(IDataProvider oledbDataProvider)
         {
-            this.dataProvider = dataProvider;
+            this.oledbDataProvider = oledbDataProvider;
 
             
         }
 
-        public IList<IDataRowBO> LoadData(IDataObjectBO dataObj)
+        public IList<IOledbDataRowBO> LoadOleDbData(IOleDbDataObjectBO dataObj)
         {
-            IDataProvider dataProvider = this.dataProvider.GetDataProvider(dataObj);
-            return dataProvider.GetDataRows();
+
+            return oledbDataProvider.GetDataRows(dataObj);
         }
     }
 }

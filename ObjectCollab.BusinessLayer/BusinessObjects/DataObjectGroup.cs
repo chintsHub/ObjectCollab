@@ -18,7 +18,7 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
 
         int? ParentId { get; set; }
         DataObjectGroupBO ParentGroup { get; set; }
-        ICollection<DataObjectBO> ChildrenDataObjects { get; set; }
+        
         ICollection<DataObjectGroupBO> ChildrenGroups { get; set; }
         
     }
@@ -33,7 +33,7 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
 
         public int? ParentId { get; set; }
         public virtual DataObjectGroupBO ParentGroup { get; set; }
-        public virtual ICollection<DataObjectBO> ChildrenDataObjects { get; set; }
+        
         public virtual ICollection<DataObjectGroupBO> ChildrenGroups { get; set; }
 
         

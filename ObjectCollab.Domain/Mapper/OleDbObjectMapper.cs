@@ -18,7 +18,7 @@ namespace ObjectCollab.Domain.Mapper
         public override void RegisterMapping()
         {
             configuration.ToTable(tableName);
-            configuration.HasKey(c => c.DataObjectId);
+            configuration.HasKey(c => c.Id);
             configuration.Property(c => c.ObjectName).IsRequired();
 
             configuration.HasRequired(c => c.Connection)

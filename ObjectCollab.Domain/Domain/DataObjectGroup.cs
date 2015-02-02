@@ -18,7 +18,7 @@ namespace ObjectCollab.Domain
 
         int? ParentId { get; set; }
         DataObjectGroup ParentGroup { get; set; }
-        ICollection<DataObject> ChildrenDataObjects { get; set; }
+        
         ICollection<DataObjectGroup> ChildrenGroups { get; set; }
         byte[] RowVersion { get; set; }
     }
@@ -33,7 +33,7 @@ namespace ObjectCollab.Domain
 
         public int? ParentId { get; set; }
         public virtual DataObjectGroup ParentGroup { get; set; }
-        public virtual ICollection<DataObject> ChildrenDataObjects { get; set; }
+        
         public virtual ICollection<DataObjectGroup> ChildrenGroups { get; set; }
 
         public byte[] RowVersion { get; set; }

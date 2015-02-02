@@ -18,8 +18,7 @@ namespace ObjectCollab.BusinessLayer.Automapper
             Mapper.CreateMap<OledbConnection, IOledbConnectionBO>()
                .IgnoreAllNonExisting();
 
-            Mapper.CreateMap<DataObject, IDataObjectBO>()
-                   .IgnoreAllNonExisting();
+            
 
             Mapper.CreateMap<ColumnDefinition, IColumnDefinitionBO>()
               .IgnoreAllNonExisting();

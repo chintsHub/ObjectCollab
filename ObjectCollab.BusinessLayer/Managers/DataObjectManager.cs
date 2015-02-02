@@ -11,25 +11,25 @@ namespace ObjectCollab.BusinessLayer.Managers
 {
     public interface IDataObjectManager
     {
-        IDataRowBO[] GetDataForDataObject(int dataObjectId);
+        IOledbDataRowBO[] GetOleDbData(int dataObjectId);
     }
-    
-    public class DataObjectManager
+
+    public class DataObjectManager : IDataObjectManager
     {
         private IExternalDataManager externalDataManager;
-        private IDataObjectEngine engine;
+        private IOleDbObjectEngine engine;
 
-        public DataObjectManager(IExternalDataManager externalDataManager, IDataObjectEngine engine)
+        public DataObjectManager(IExternalDataManager externalDataManager, IOleDbObjectEngine engine)
         {
             this.externalDataManager = externalDataManager;
             this.engine = engine;
         }
 
-        public IDataRowBO[] GetDataForDataObject(int dataObjectId)
+        public IOledbDataRowBO[] GetOleDbData(int dataObjectId)
         {
-            var dataObject =  engine.GetDataObjectById(dataObjectId);
+            var dataObject =  engine.GetOleDbObjectById(dataObjectId);
 
-            var retVal = externalDataManager.LoadData(dataObject);
+            var retVal = externalDataManager.LoadOleDbData(dataObject);
             return retVal.ToArray();
         }
     }

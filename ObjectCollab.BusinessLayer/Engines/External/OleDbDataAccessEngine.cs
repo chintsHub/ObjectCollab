@@ -5,7 +5,7 @@ using ObjectCollab.Enums;
 
 namespace ObjectCollab.BusinessLayer.Engine
 {
-    internal class OleDbDataAccessEngine : IOleDbDataAccessEngine
+    public class OleDbDataAccessEngine : IOleDbDataAccessEngine
     {
         
         public  IDbConnection GetConnection(string connectionString)

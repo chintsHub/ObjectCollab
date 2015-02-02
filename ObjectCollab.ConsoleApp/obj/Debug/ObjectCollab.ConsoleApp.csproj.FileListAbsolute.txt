@@ -40,3 +40,7 @@ C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\ObjectCollab.Domain.pdb
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.ConsoleApp\obj\Debug\ObjectCollab.ConsoleApp.csprojResolveAssemblyReference.cache
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\AutoMapper.Net4.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.ConsoleApp\bin\Debug\Microsoft.AspNet.Identity.Core.xml

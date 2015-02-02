@@ -26,3 +26,7 @@ C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectC
 C:\Chintan\Projects\ObjectCollab\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.Enums.pdb
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.Enums.dll
 C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\bin\Debug\ObjectCollab.Enums.pdb
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Chintan\ProtoTypes\ObjectCollab\ObjectCollab.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

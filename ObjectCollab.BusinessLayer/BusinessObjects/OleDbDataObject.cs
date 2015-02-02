@@ -8,7 +8,7 @@ using ObjectCollab.Enums;
 
 namespace ObjectCollab.BusinessLayer.BusinessObjects
 {
-    public interface IOleDbDataObjectBO : IDataObjectBO
+    public interface IOleDbDataObjectBO 
     {
         
         int ConnectionId { get; set; }
@@ -22,7 +22,7 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
 
     }
 
-    public class OleDbDataObjectBO : DataObjectBO, IOleDbDataObjectBO
+    public class OleDbDataObjectBO : IOleDbDataObjectBO
     {
         public int ConnectionId { get; set; }
         public IOledbConnectionBO Connection { get; set; }

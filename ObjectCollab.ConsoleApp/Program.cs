@@ -3,8 +3,9 @@ using System.Configuration;
 using System.Linq;
 using ObjectCollab.BusinessLayer.Automapper;
 using ObjectCollab.BusinessLayer.BusinessObjects;
+using ObjectCollab.BusinessLayer.Engine;
 using ObjectCollab.BusinessLayer.Engines;
-using ObjectCollab.BusinessLayer.Factory;
+
 using ObjectCollab.BusinessLayer.Manager;
 using ObjectCollab.BusinessLayer.Managers;
 using ObjectCollab.DAL;
@@ -19,11 +20,11 @@ namespace ObjectCollab.ConsoleApp
             AutoMapperConfiguration.Configure();
             var objectCollabDal = new ObjectCollabDAL(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
-            var extMang = new ExternalDataManager(new DataProviderFactory());
+            var extMang = new ExternalDataManager(new OledbDataProvider(new OleDbDataAccessEngine()));
 
 
-            var extDataMang = new DataObjectManager(extMang, new DataObjectEngine(objectCollabDal));
-            var assetData = extDataMang.GetDataForDataObject(1);
+            var extDataMang = new DataObjectManager(extMang, new OleDbObjectEngine(objectCollabDal));
+            var assetData = extDataMang.GetOleDbData(1);
 
             
 

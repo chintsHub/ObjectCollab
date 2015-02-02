@@ -8,19 +8,19 @@ using ObjectCollab.Domain;
 
 namespace ObjectCollab.BusinessLayer.BusinessObjects
 {
-    public interface IDataRowBO
+    public interface IOledbDataRowBO
     {
-        IDataObjectBO DataObject {get; set;}
+        IOleDbDataObjectBO DataObject {get; set;}
         object this[IColumnDefinitionBO field] { get;}
         
 
     }
 
-    public class DataRowBO : IDataRowBO
+    public class OledbDataRowBo : IOledbDataRowBO
     {
         private DataRow _row;
-        
-        public IDataObjectBO DataObject { get; set; }
+
+        public IOleDbDataObjectBO DataObject { get; set; }
         public object this[IColumnDefinitionBO field] 
         { 
             get
@@ -30,7 +30,7 @@ namespace ObjectCollab.BusinessLayer.BusinessObjects
             
         }
 
-        public DataRowBO(DataRow row, IDataObjectBO dataObject)
+        public OledbDataRowBo(DataRow row, IOleDbDataObjectBO dataObject)
         {
             _row = row;
             DataObject = dataObject;

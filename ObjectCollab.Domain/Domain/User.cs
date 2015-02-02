@@ -4,32 +4,26 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNet.Identity.EntityFramework;
 using ObjectCollab.Enums;
 
 namespace ObjectCollab.Domain
 {
     public interface IUser
     {
-        int UserId { get; set; }
-        string UserName { get; set; }
-        string Password { get; set; }
-        byte[] RowVersion { get; set; }
-        Role Role { get; set; }
+       string FirstName { get; set; }
+       string LastName { get; set; }
+        
+        
     }
 
-    public class User : IUser, IValidatableObject 
+    public class User : IdentityUser, IUser, IValidatableObject 
     {
-        public int UserId { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public byte[] RowVersion { get; set; }
-        public Role Role { get; set; }
 
-        public User()
-        {
-            
-        }
-
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        
+        
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             var validationResults = new List<ValidationResult>();
@@ -37,10 +31,15 @@ namespace ObjectCollab.Domain
             if (String.IsNullOrWhiteSpace(UserName))
                 validationResults.Add(new ValidationResult("UserName is required", new string[] { "UserName" }));
 
-            if (String.IsNullOrWhiteSpace(Password))
+            if (String.IsNullOrWhiteSpace(LastName))
                 validationResults.Add(new ValidationResult("Password is required", new string[] { "Password" }));
 
             return validationResults;
         }
+    }
+
+    public class Role : IdentityRole
+    {
+        
     }
 }

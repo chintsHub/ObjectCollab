@@ -5,14 +5,16 @@ using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNet.Identity.EntityFramework;
 using ObjectCollab.Domain;
+
 
 
 namespace ObjectCollab.DAL
 {
     public interface IAppDbContext : IDisposable
     {
-        IDbSet<DataObject> DataObjects { get; set; }
+        
         IDbSet<OleDbDataObject> OleDbDataObjects { get; set; }
         IDbSet<DataObjectGroup> DataObjectGroups { get; set; }
         IDbSet<OledbConnection> OledbConnections { get; set; }
@@ -22,16 +24,16 @@ namespace ObjectCollab.DAL
         int SaveChanges();
     }
 
-    public class ObjectCollabContext : DbContext, IAppDbContext
+    public class ObjectCollabContext : IdentityDbContext<User>, IAppDbContext
     {
         private readonly string _connectionString;
 
-        public IDbSet<DataObject> DataObjects { get; set; }
+        
         public IDbSet<OleDbDataObject> OleDbDataObjects { get; set; }
         public IDbSet<DataObjectGroup> DataObjectGroups { get; set; }
         public IDbSet<OledbConnection> OledbConnections { get; set; }
         
-        public IDbSet<User> Users { get; set; }
+        
 
         public ObjectCollabContext()
         { }

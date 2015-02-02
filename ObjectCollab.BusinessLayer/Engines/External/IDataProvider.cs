@@ -8,7 +8,7 @@ namespace ObjectCollab.BusinessLayer.Engine
 {
     public interface IDataProvider
     {
-        IList<IDataRowBO> GetDataRows();
+        IList<IOledbDataRowBO> GetDataRows(IOleDbDataObjectBO oleDbObject);
     }
 }
 

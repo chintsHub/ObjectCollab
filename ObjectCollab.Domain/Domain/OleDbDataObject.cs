@@ -8,32 +8,45 @@ using ObjectCollab.Enums;
 
 namespace ObjectCollab.Domain
 {
-    public interface IOleDbDataObject : IDataObject
+    public interface IOleDbDataObject 
     {
-        
+        int Id { get; set; }
+        string FriendlyObjectName { get; set; }
+
+        //Relationship with group
+        int GroupId { get; set; }
+        DataObjectGroup Group { get; set; }
+
+        //Relationship with connection
         int ConnectionId { get; set; }
         OledbConnection Connection { get; set; }
 
         string ObjectName { get; set; }
         ICollection<ColumnDefinition> ColumnDefinitions { get; set; }
-        string WhereClause { get; set; }
+        
 
         
 
     }
 
-    public class OleDbDataObject : DataObject, IOleDbDataObject, IValidatableObject
+    public class OleDbDataObject : IOleDbDataObject, IValidatableObject
     {
+
+        public int Id { get; set; }
+        public string FriendlyObjectName { get; set; }
+        public string ObjectName { get; set; }
+
+        //Relationship with group
+        public int GroupId { get; set; }
+        public DataObjectGroup Group { get; set; }
+        
         public int ConnectionId { get; set; }
         public OledbConnection Connection { get; set; }
 
-        public string ObjectName { get; set; }
+        
         public ICollection<ColumnDefinition> ColumnDefinitions { get; set; }
 
-        public string WhereClause { get; set; }
-
-        public OledbProvider OledbProvider { get; set; }
-
+        
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             var validationResults = new List<ValidationResult>();

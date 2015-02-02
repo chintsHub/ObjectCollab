@@ -8,28 +8,28 @@ namespace ObjectCollab.BusinessLayer.Engine
 {
     public class OledbDataProvider : IDataProvider
     {
-        private IOleDbDataObjectBO oleDbObj;
+        
         private IOleDbDataAccessEngine exteranlDal;
 
         
 
-        public OledbDataProvider(IOleDbDataObjectBO oleDbObject, IOleDbDataAccessEngine exteranlDal)
+        public OledbDataProvider(IOleDbDataAccessEngine exteranlDal)
         {
-            this.oleDbObj = oleDbObject;
+            
             this.exteranlDal = exteranlDal;
         }
 
 
-        
-        public IList<IDataRowBO> GetDataRows()
+
+        public IList<IOledbDataRowBO> GetDataRows(IOleDbDataObjectBO oleDbObject)
         {
             DataTable externalData = null;
-            using (IDbConnection connection = exteranlDal.GetConnection(oleDbObj.Connection.ConnectionString))
+            using (IDbConnection connection = exteranlDal.GetConnection(oleDbObject.Connection.ConnectionString))
             {
                 try
                 {
                     connection.Open();
-                    IDataAdapter da = exteranlDal.GetDataAdapter("select * from " + oleDbObj.ObjectName, connection);
+                    IDataAdapter da = exteranlDal.GetDataAdapter("select * from " + oleDbObject.ObjectName, connection);
                     DataSet ds = new DataSet();
 
                     //if (schemaOnly)
@@ -47,11 +47,11 @@ namespace ObjectCollab.BusinessLayer.Engine
                         connection.Close();
                 }
             }
-            var returnValue = new List<IDataRowBO>();
+            var returnValue = new List<IOledbDataRowBO>();
             //construct datarow
             foreach(DataRow row in externalData.Rows)
             {
-                var rowBo = new DataRowBO(row, oleDbObj);
+                var rowBo = new OledbDataRowBo(row, oleDbObject);
                 returnValue.Add(rowBo);
             }
 
